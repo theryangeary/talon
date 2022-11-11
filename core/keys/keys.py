@@ -127,10 +127,14 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alt": "alt",  #'alter': 'alt',
-    "control": "ctrl",  #'troll':   'ctrl',
+    # "alt": "alt",
+    'alter': 'alt',
+    "control": "ctrl",
+    'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
+    "big": "shift",
     "super": "super",
+    "command": "cmd",
 }
 if app.platform == "mac":
     modifier_keys["command"] = "cmd"

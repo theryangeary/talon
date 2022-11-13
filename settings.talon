@@ -3,6 +3,9 @@ settings():
     # decrease the default speech timeout
     speech.timeout = 0.2
 
+    # Set tmux prefix key
+    user.tmux_prefix_key = 'j'
+
     # Adjust the scale of the imgui to my liking
     imgui.scale = 1.3
 

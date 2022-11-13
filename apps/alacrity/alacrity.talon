@@ -11,6 +11,7 @@ tag(): user.generic_unix_shell
 tag(): user.git
 tag(): user.anaconda
 tag(): user.kubectl
+tag(): user.tmux
 
 # TODO: explain
 tag(): user.tabs

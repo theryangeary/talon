@@ -29,6 +29,15 @@ class TmuxActions:
     def tmux_enter_command(command: str = ""):
         """Enter tmux command mode and optionally insert a command without executing it."""
         actions.user.tmux_keybind(":")
+
+    def enter_tmux_command_mode():
+        """enter tmux command mode by using prefix and : key"""
+        actions.user.do_tmux_keybind(":")
+        actions.sleep("100ms")
+
+    def enter_tmux_command(command: str):
+        """enter tmux command without executing, for safety on destructive commands"""
+        actions.user.enter_tmux_command_mode()
         actions.insert(command)
 
     def tmux_execute_command(command: str):

@@ -7,7 +7,7 @@ apps = mod.apps
 
 apps.alacrity = """
 os: mac
-and app.name: Alacritty
+and app.bundle: io.alacritty
 """
 
 apps.meet = """

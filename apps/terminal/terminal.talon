@@ -1,4 +1,5 @@
 tag: terminal
+and not tag: vim
 -
 
 clear word left:

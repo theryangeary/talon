@@ -248,7 +248,12 @@ abbreviations = {
     "what the fuck": "wtf",
     "window": "win",
     "work in progress": "wip",
+
+    "high value mode": "HVM",
+    "cross mode dispatch": "CMD",
+    "ride chooser": "RC",
 }
 
 ctx = Context()
 ctx.lists["user.abbreviation"] = abbreviations
+

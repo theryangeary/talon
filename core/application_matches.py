@@ -89,3 +89,7 @@ and app.exe: powershell.exe
 apps.vim = """
 win.title:/vim/
 """
+
+apps.dlv = """
+win.title:/dlv/
+"""

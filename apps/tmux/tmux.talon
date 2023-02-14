@@ -7,3 +7,5 @@ tag(): user.splits
 go split <user.arrow_key>: user.tmux_keybind(arrow_key)
 #Say a number after this command to switch to pane
 go split: user.tmux_execute_command("display-panes -d 0")
+
+copy mode: user.do_tmux_keybind('[')

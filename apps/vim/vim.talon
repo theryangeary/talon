@@ -9,8 +9,6 @@ split left: insert(' wv')
 split close: insert(' wc')
 window only: insert(' wo')
 
-/*change inside word: insert('ciw')*/
-/*change inside big word: insert('ciW')*/
 change inside: insert('ci')
 
 clipboard copy inside dubquote: insert('"+yi"')

@@ -37,3 +37,5 @@ copy lock spec: insert(' dcl')
 quick fix next: insert(']q')
 quick fix last: insert('[q')
 go quick fix <number>: insert(':{number}cc\n')
+
+insert to do: insert('TODO(theryangeary)')

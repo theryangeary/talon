@@ -10,7 +10,6 @@ copy:
 move:
     user.move()
 remove: insert("rm ")
-cat: insert("cat ")
 cd: insert("cd ")
 grep:
     user.grep()
@@ -23,4 +22,3 @@ ps grep:
     user.ps_grep()
 diff: user.diff()
 lyft cube: insert("lyftkube ")
-

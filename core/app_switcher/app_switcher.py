@@ -31,6 +31,7 @@ mac_application_directories = [
     "/Applications/Utilities",
     "/System/Applications",
     "/System/Applications/Utilities",
+    "/Users/rgeary/Applications/Chrome Apps.localized/",
 ]
 
 words_to_exclude = [

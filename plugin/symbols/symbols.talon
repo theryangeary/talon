@@ -7,6 +7,7 @@ ellipses: "..."
 (comma and | spamma): ", "
 arrow: "->"
 dub arrow: "=>"
+walrus: ":="
 empty dub string: user.insert_between('"', '"')
 empty escaped (dub string | dub quotes): user.insert_between('\\"', '\\"')
 empty string: user.insert_between("'", "'")

@@ -10,3 +10,6 @@ bar [reference | ref]: user.vscode("workbench.view.extension.references-view")
 [reference | ref] next: user.vscode("references-view.next")
 [reference | ref] [last | prev]: user.vscode("references-view.prev")
 
+copy command id: user.copy_command_id()
+disk: edit.save()
+disk all: edit.save_all()

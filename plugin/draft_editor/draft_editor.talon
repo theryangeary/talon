@@ -12,6 +12,10 @@ draft line:
     edit.select_line()
     user.draft_editor_open()
 
+draft [para] graph:
+    edit.select_paragraph()
+    user.draft_editor_open()
+
 draft top:
     edit.extend_file_start()
     user.draft_editor_open()

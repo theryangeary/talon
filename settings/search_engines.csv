@@ -4,3 +4,7 @@ https://www.google.com/search?q=%s,google
 https://maps.google.com/maps?q=%s,map
 https://scholar.google.com/scholar?q=%s,scholar
 https://en.wikipedia.org/w/index.php?search=%s,wiki
+https://sourcegraph.lyft.net/search?q=context%3Aglobal+%s&patternType=standard&sm=1&groupBy=repo,sourcegraph
+https://go.lyft.net/%s,golink
+https://deployview.lyft.net/projects/%s,deployview
+https://github.com/lyft/%s,lyft repo

@@ -6,6 +6,7 @@ link this:
     sleep(200ms)
     edit.paste()
     sleep(200ms)
+    key(enter)
 
 link last:
     edit.extend_word_left()
@@ -13,3 +14,4 @@ link last:
     sleep(200ms)
     edit.paste()
     sleep(200ms)
+    key(enter)

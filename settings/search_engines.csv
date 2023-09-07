@@ -1,6 +1,7 @@
 URL Template,Name
 https://www.amazon.com/s/?field-keywords=%s,amazon
 https://www.google.com/search?q=%s,google
+https://duckduckgo.com/?q=%s,duck
 https://maps.google.com/maps?q=%s,map
 https://scholar.google.com/scholar?q=%s,scholar
 https://en.wikipedia.org/w/index.php?search=%s,wiki
@@ -8,3 +9,5 @@ https://sourcegraph.lyft.net/search?q=context%3Aglobal+%s&patternType=standard&s
 https://go.lyft.net/%s,golink
 https://deployview.lyft.net/projects/%s,deployview
 https://github.com/lyft/%s,lyft repo
+https://alerts.lyft.net/metrics?query=%s,metrics
+https://amundsen.lyft.net/search?term=%s&resource=table&index=0&filters=%7B%22is_prioritized%22%3A%7B%22value%22%3A%22true%22%7D%2C%22is_view%22%3A%7B%22value%22%3A%22false%22%7D%7D,amundsen

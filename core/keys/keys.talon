@@ -1,7 +1,9 @@
 go <user.arrow_keys>: user.move_cursor(arrow_keys)
 <user.letter>: key(letter)
-(ship | uppercase) <user.letters> [(lowercase | sunk)]:
+(ship | uppercase | region | (red|each) (home|one)) <user.letters> [(lowercase | sunk)]:
     user.insert_formatted(letters, "ALL_CAPS")
+simregion <user.letters> [(lowercase | sunk)]:
+    user.insert_formatted("SIM" + letters, "ALL_CAPS") 
 <user.symbol_key>: key(symbol_key)
 <user.function_key>: key(function_key)
 <user.special_key>: key(special_key)

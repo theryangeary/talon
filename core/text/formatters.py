@@ -153,6 +153,7 @@ formatters_dict = {
         first_vs_rest(lambda w: " --" + w.lower(), lambda w: "-" + w.lower()),
     ),
     "DOUBLE_COLON_SEPARATED": words_with_joiner("::"),
+    "SINGLE_COLON_SEPARATED": words_with_joiner(":"),
     "ALL_CAPS": (SEP, every_word(lambda w: w.upper())),
     "ALL_LOWERCASE": (SEP, every_word(lambda w: w.lower())),
     "DOUBLE_QUOTED_STRING": (SEP, surround('"')),
@@ -166,6 +167,7 @@ formatters_dict = {
         first_vs_rest(lambda w: title_case()(0, w, True)),
     ),
     "CAPITALIZE_ALL_WORDS": (SEP, title_case()),
+    "ALTERNATING_CASE": (SEP, every_word(lambda w: ''.join([c.lower() if i%2==0 else c.upper() for (i,c) in enumerate(w)]))),
 }
 
 # Mapping from spoken phrases to formatter names
@@ -179,6 +181,7 @@ code_formatter_names = {
     "hammer": "PUBLIC_CAMEL_CASE",
     "kebab": "DASH_SEPARATED",
     "packed": "DOUBLE_COLON_SEPARATED",
+    "short packed": "SINGLE_COLON_SEPARATED",
     "padded": "SPACE_SURROUNDED_STRING",
     "slasher": "SLASH_SEPARATED",
     "smash": "NO_SPACES",
@@ -190,6 +193,7 @@ prose_formatter_names = {
     "speak": "NOOP",
     "sentence": "CAPITALIZE_FIRST_WORD",
     "title": "CAPITALIZE_ALL_WORDS",
+    "mocking": "ALTERNATING_CASE",
 }
 # Mapping from spoken phrases to formatters
 formatter_words = {

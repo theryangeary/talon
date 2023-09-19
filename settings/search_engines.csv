@@ -11,3 +11,4 @@ https://deployview.lyft.net/projects/%s,deployview
 https://github.com/lyft/%s,lyft repo
 https://alerts.lyft.net/metrics?query=%s,metrics
 https://amundsen.lyft.net/search?term=%s&resource=table&index=0&filters=%7B%22is_prioritized%22%3A%7B%22value%22%3A%22true%22%7D%2C%22is_view%22%3A%7B%22value%22%3A%22false%22%7D%7D,amundsen
+https://grafana.lyft.net/?query=%s&search=open&orgId=1,grafana

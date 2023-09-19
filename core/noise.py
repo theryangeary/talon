@@ -18,3 +18,13 @@ class Actions:
 
 
 noise.register("pop", lambda _: actions.user.noise_trigger_pop())
+
+@mod.action_class
+class Actions:
+    def noise_trigger_hiss(active: bool):
+        """
+        Called when the user makes a 'hiss' noise.
+        """
+
+
+noise.register("hiss", lambda active: actions.user.noise_trigger_hiss(active))

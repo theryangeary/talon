@@ -273,6 +273,16 @@ def on_pop():
         if should_click:
             ctrl.mouse_click(button=0, hold=16000)
 
+cron_jobs = {}
+@ctx.action("user.noise_trigger_hiss")
+def on_hiss(active: bool):
+    delay = "300ms"
+    if active:
+        cron_jobs["hiss"]=cron.after(delay, actions.user.mouse_scroll_down_continuous)
+    else:
+        cron.cancel(cron_jobs["hiss"])
+        actions.user.mouse_scroll_stop()
+
 
 def mouse_scroll(amount):
     def scroll():

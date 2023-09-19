@@ -60,3 +60,22 @@ wc -l,word count lines
 wc,word count
 who
 whoami,who am I
+
+dynamex marketplaceconfig,dynamics
+dynamex_update,dynamics update
+dynamex_create,dynamics create 
+rollout,rollout
+lyftkube,lyft cube
+lyftkube get pods -p --env=production,lyft cube get pods
+lyftkube get pods -p --env=staging,lyft cube get pods staging
+lyftkube logs,lyft cube logs
+lyftkube describe pod,lyft cube describe pod
+lyftkube maint debug,lyft cube main debug
+lyftkube auth okta,lyft cube auth octa
+idldev lint check,idl dev lint check
+idldev protolock check,idl dev proto lock check
+idldev protolock update,idl dev proto lock update
+go test,go test
+go test ./...,go test root
+go mod tidy,go mod tidy
+go mod update,go mod update

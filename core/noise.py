@@ -27,4 +27,4 @@ class Actions:
         """
 
 
-noise.register("hiss", lambda active: actions.user.noise_trigger_hiss(active))
+# noise.register("hiss", lambda active: actions.user.noise_trigger_hiss(active))

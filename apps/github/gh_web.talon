@@ -9,5 +9,8 @@ submit queue merge: user.submit_queue("merge")
 submit queue retest: user.submit_queue("retest")
 submit queue rebase: user.submit_queue("rebase")
 submit queue revert: user.submit_queue("revert")
+submit queue PTAL {user.github_users}: user.submit_queue("ptal {github_users}")
 
-(submit queue | pull request) approve: user.approve_pull_request()
+pull request approve: user.approve_pull_request()
+
+

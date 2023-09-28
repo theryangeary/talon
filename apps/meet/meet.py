@@ -2,24 +2,25 @@ from talon import Module, Context, ctrl, actions
 mod = Module()
 ctx = Context()
 
-@mod.action_class
-class GoogleMeetActions:
-    def toggle_meet_and_talon():
+@ctx.action_class("user")
+class KeyActions:
+    def toggle_speech():
         """
         toggle microphone mute for google meet and talon
 
         it is expected that the user keeps google meet in the first tab in google chrome
         """
-        # access meet
-        app = actions.user.get_running_app("google meet")
+        # toggle speech
+        actions.next()
 
-        # focus first tab
-        ctrl.key_press("d", app=app, cmd=True)
-        if not actions.speech.enabled():
-            actions.speech.enable()
-        else:
-            actions.speech.disable()
+        # toggle meet
+        try:
+            ctrl.key_press("d", app=actions.user.get_running_app("google meet"), cmd=True)
+        except RuntimeError:
+            pass
 
+@mod.action_class
+class GoogleMeetActions:
     def toggle_microphone():
         """toggle google meet microphone"""
         actions.key("cmd-d")

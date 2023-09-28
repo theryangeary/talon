@@ -20,3 +20,5 @@ window <user.text>:
     sleep(30ms)
     insert(user.formatted_text("{text}", "NO_SPACES"))
     key("enter")
+
+pull request view: user.vscode("pr.openPullRequestOnGitHub")

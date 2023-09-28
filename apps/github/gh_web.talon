@@ -1,8 +1,8 @@
 # requires gh utility to be installed
 tag: browser
 browser.host: github.com
--
 app: github
+-
 
 submit queue test: user.submit_queue("test")
 submit queue merge: user.submit_queue("merge")
@@ -16,5 +16,3 @@ submit queue offload: user.submit_queue("offload")
 submit queue PTAL {user.github_users}: user.submit_queue("ptal {github_users}")
 
 pull request approve: user.approve_pull_request()
-
-

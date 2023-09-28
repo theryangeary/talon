@@ -18,13 +18,10 @@ mod.list("git_argument", desc="Command-line git options and arguments.")
 dirpath = Path(__file__).parent
 github_users_csv_path = str(dirpath / "github_users.csv")
 
-
-
 ctx = Context()
 ctx.matches = r"""
 app: github
 """
-
 
 github_users = get_list_from_csv(
     "github_users.csv",
@@ -33,8 +30,6 @@ github_users = get_list_from_csv(
 
 mod.list("github_users", desc="GitHub user names")
 ctx.lists["self.github_users"] = github_users
-
-
 
 @mod.action_class
 class Actions:

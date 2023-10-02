@@ -64,3 +64,9 @@ class Actions:
         if not url or not url.startswith("https://github.com/lyft/"):
             return
         _ = actions.user.gh_command(f"pr review {url} --approve")
+
+
+@mod.capture(rule="{self.github_users}+")
+def github_users(m) -> str:
+    "One or more GitHub user names"
+    return " ".join(m.github_users_list)

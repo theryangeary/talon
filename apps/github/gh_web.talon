@@ -13,6 +13,6 @@ submit queue revert: user.submit_queue("revert")
 submit queue lock: user.submit_queue("lock")
 submit queue unlock: user.submit_queue("unlock")
 submit queue offload: user.submit_queue("offload")
-submit queue PTAL {user.github_users}: user.submit_queue("ptal {github_users}")
+submit queue PTAL <user.github_users>: user.submit_queue("ptal {github_users}")
 
 pull request approve: user.approve_pull_request()

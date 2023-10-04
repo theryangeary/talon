@@ -15,4 +15,4 @@ submit queue unlock: user.submit_queue("unlock")
 submit queue offload: user.submit_queue("offload")
 submit queue PTAL <user.github_users>: user.submit_queue("ptal {github_users}")
 
-pull request approve: user.approve_pull_request()
+(pull request | submit queue) approve: user.approve_pull_request()

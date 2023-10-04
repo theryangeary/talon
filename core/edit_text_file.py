@@ -1,7 +1,8 @@
 import os
 import subprocess
 
-from talon import Context, Module, app
+from talon import Context, Module, app, actions
+from ..plugin.draft_editor.draft_editor import get_editor_app
 
 # path to community/knausj root directory
 REPO_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -57,8 +58,17 @@ class WinActions:
 @macctx.action_class("self")
 class MacActions:
     def edit_text_file(path):
+        editor_app = get_editor_app()
+        actions.user.switcher_focus_app(editor_app)
+        actions.sleep("200ms")
+        actions.user.vscode("workbench.action.quickOpen")
+        actions.sleep('50ms')
+        actions.insert(path)
+        actions.sleep('200ms')
+        actions.key("enter")
+
         # -t means try to open in a text editor.
-        open_with_subprocess(path, ["/usr/bin/open", "-t", path])
+        # open_with_subprocess(path, ["/usr/bin/open", "-t", path])
 
 
 @linuxctx.action_class("self")

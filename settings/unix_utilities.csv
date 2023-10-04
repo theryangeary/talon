@@ -26,6 +26,7 @@ id,I D
 less
 ln -s,link soft
 ln,link
+man,man
 md5sum,M D five sum
 mkdir,make dear
 paste
@@ -60,6 +61,7 @@ wc -l,word count lines
 wc,word count
 who
 whoami,who am I
+which,which
 
 dynamex marketplaceconfig,dynamics
 dynamex_update,dynamics update
@@ -79,3 +81,4 @@ go test,go test
 go test ./...,go test root
 go mod tidy,go mod tidy
 go mod update,go mod update
+gcll,git clone lyft

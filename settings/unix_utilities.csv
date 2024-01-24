@@ -78,7 +78,10 @@ idldev lint check,idl dev lint check
 idldev protolock check,idl dev proto lock check
 idldev protolock update,idl dev proto lock update
 go test,go test
-go test ./...,go test root
+go test ./...,go test all
+go get,go get
 go mod tidy,go mod tidy
 go mod update,go mod update
 gcll,git clone lyft
+lyftvenv,lyft venv
+pytest,pie test

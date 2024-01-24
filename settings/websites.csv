@@ -24,3 +24,7 @@ https://infradocs.lyft.net/index.html,infra docs
 https://sourcegraph.lyft.net/,sourcegraph
 https://kibana-staging.lyft.net/,kibana staging
 https://kibana.lyft.net/,kibana
+https://deployview.lyft.net/,deploy view
+https://alerts.lyft.net/chart_v2/new?qs={"s"%3A[]}/,chart
+https://alerts.lyft.net/metrics,metrics
+
